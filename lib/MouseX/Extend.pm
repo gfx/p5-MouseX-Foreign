@@ -1,5 +1,4 @@
 package MouseX::Extend;
-
 use 5.008_001;
 use Mouse::Util; # turns on strict and warnings
 
@@ -51,11 +50,11 @@ This document describes MouseX::Extend version 0.001.
 
 =head1 DESCRIPTION
 
+
 MouseX::Extend provides an ability for Mouse classes to extend any classes,
-including non-Mouse classes. This is a Mouse port of MooseX::NonMoose.
+including non-Mouse classes, including Moose classes.
 
-Note that you can make subclasses of Moose classes :)
-
+ 
 =head1 DEPENDENCIES
 
 Perl 5.8.1 or later.
@@ -65,6 +64,10 @@ Perl 5.8.1 or later.
 All complex software has bugs lurking in it, and this module is no
 exception. If you find a bug please either email me, or add the bug
 to cpan-RT.
+
+=head1 ACKNOWLEDGEMENT
+
+This is a Mouse port of MooseX::NonMoose, although the name is different.
 
 =head1 SEE ALSO
 
@@ -78,13 +81,13 @@ L<MooseX::Alien>
 
 =head1 AUTHOR
 
-Goro Fuji (gfx) E<lt>gfuji(at)cpan.orgE<gt>
+Fuji, Goro (gfx) E<lt>gfuji(at)cpan.orgE<gt>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2010, Goro Fuji (gfx). All rights reserved.
+Copyright (c) 2010, Fuji, Goro (gfx). All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself. See L<perlartistic> for details.
+it under the same terms as Perl itself.
 
 =cut
