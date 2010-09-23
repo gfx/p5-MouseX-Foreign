@@ -16,7 +16,7 @@ my $demolished = 0;
     has name => (
         is => 'rw',
         isa => 'Str',
-
+        default => 'default name',
     );
 
     sub FOREIGNBUILDARGS {
@@ -32,6 +32,10 @@ my $demolished = 0;
 
     sub BUILD   { $built++ }
     sub DEMOLISH{ $demolished++ }
+
+    package MyBigInt2;
+    use Mouse;
+    extends qw(MyBigInt);
 }
 
 with_immutable {
@@ -47,5 +51,20 @@ with_immutable {
 
 is $built,      2;
 is $demolished, 2;
+$built      = 0;
+$demolished = 0;
 
+with_immutable {
+    my $i = MyBigInt2->new(42);
+
+    isa_ok $i, 'Math::BigInt',
+    isa_ok $i, 'MyBigInt';
+
+    is $i, 42;
+    is $i->name, 'default name';
+
+} qw(MyBigInt2);
+
+is $built,      2;
+is $demolished, 2;
 done_testing;
