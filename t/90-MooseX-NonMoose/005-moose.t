@@ -13,7 +13,7 @@ has foo => (
 
 package Foo::Sub;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 package main;
@@ -33,7 +33,7 @@ ok(Foo::Sub->meta->has_method('new'),
 
 package Foo::OtherSub;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 package main;

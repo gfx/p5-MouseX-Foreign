@@ -8,7 +8,7 @@ package Foo;
 sub new { bless {}, shift }
 
 package Foo::Mouse;
-use Mouse -traits => 'MouseX::Extend::Meta::Role::Class';
+use Mouse -traits => 'MouseX::Foreign::Meta::Role::Class';
 extends 'Foo';
 
 package main;

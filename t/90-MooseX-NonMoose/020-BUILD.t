@@ -12,7 +12,7 @@ sub new {
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 has class => (

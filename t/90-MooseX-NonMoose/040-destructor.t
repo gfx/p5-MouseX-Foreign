@@ -13,7 +13,7 @@ sub DESTROY { $destroyed++ }
 
 package Foo::Sub;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 sub DEMOLISH { $demolished++ }

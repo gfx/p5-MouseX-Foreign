@@ -21,7 +21,7 @@ sub quux { ref(shift) }
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 has bar => (

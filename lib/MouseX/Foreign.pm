@@ -1,24 +1,26 @@
-package MouseX::Extend;
+package MouseX::Foreign;
 use 5.008_001;
 use Mouse::Util; # turns on strict and warnings
 
 our $VERSION = '0.001';
 
 use Mouse::Util::MetaRole;
-use Carp();
+use Carp ();
 
 sub import {
     shift;
 
     my $caller = caller;
     if(!$caller->can('meta')){
-        Carp::croak("$caller does not have the meta method (did you use Mouse for $caller?)");
+        Carp::croak(
+              "$caller does not have the meta method"
+            . " (did you use Mouse for $caller?)");
     }
 
     Mouse::Util::MetaRole::apply_metaroles(
         for => $caller,
         class_metaroles => {
-            class => ['MouseX::Extend::Meta::Role::Class'],
+            class => ['MouseX::Foreign::Meta::Role::Class'],
         },
     );
 
@@ -31,17 +33,17 @@ __END__
 
 =head1 NAME
 
-MouseX::Extend - Extends non-Mouse classes as well as Mouse classes
+MouseX::Foreign - Extends non-Mouse classes as well as Mouse classes
 
 =head1 VERSION
 
-This document describes MouseX::Extend version 0.001.
+This document describes MouseX::Foreign version 0.001.
 
 =head1 SYNOPSIS
 
     package MyInt;
     use Mouse;
-    use MouseX::Extend qw(Math::BitInt);
+    use MouseX::Foreign qw(Math::BitInt);
 
     has name => (
         is  => 'ro',
@@ -51,7 +53,7 @@ This document describes MouseX::Extend version 0.001.
 =head1 DESCRIPTION
 
 
-MouseX::Extend provides an ability for Mouse classes to extend any classes,
+MouseX::Foreign provides an ability for Mouse classes to extend any classes,
 including non-Mouse classes, including Moose classes.
 
  

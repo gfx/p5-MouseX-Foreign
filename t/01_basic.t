@@ -23,7 +23,7 @@ BEGIN{
 {
     package MyPerson;
     use Mouse;
-    use MouseX::Extend qw(Person);
+    use MouseX::Foreign qw(Person);
 
     has handle_name => (
         is => 'rw',
@@ -46,6 +46,6 @@ with_immutable {
 } qw(MyPerson);
 
 is $person_destroyed, 2, "the base class's destructor is called";
-is $myperson_built, 2, 'BUILD is called';
+is $myperson_built,   2, 'BUILD is called';
 
 done_testing;

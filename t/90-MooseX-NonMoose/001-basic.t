@@ -12,7 +12,7 @@ sub new {
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Extend qw(Foo);
+use MouseX::Foreign qw(Foo);
 
 package main;
 my $foo = Foo->new;

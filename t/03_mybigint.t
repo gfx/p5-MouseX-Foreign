@@ -10,7 +10,7 @@ my $demolished = 0;
 {
     package MyBigInt;
     use Mouse;
-    use MouseX::Extend;
+    use MouseX::Foreign;
     extends qw(Math::BigInt);
 
     has name => (

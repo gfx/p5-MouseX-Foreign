@@ -1,5 +1,4 @@
 #!perl -w
-
 use strict;
 use Test::Requires qw(Moose);
 use Test::More;
@@ -7,8 +6,10 @@ use Test::Exception;
 
 use Test::Mouse;
 
-my $person_destroyed = 0;
-my $myperson_built   = 0;
+my $person_build      = 0;
+my $person_demolish   = 0;
+my $myperson_build    = 0;
+my $myperson_demolish = 0;
 BEGIN{
     package Person;
     use Moose;
@@ -16,7 +17,8 @@ BEGIN{
     has name => (is => 'rw');
     has age  => (is => 'rw');
 
-    sub DEMOLISH { $person_destroyed++ }
+    sub BUILD    { $person_build++ }
+    sub DEMOLISH { $person_demolish++ }
 
     __PACKAGE__->meta->make_immutable();
 }
@@ -24,14 +26,15 @@ BEGIN{
 {
     package MyPerson;
     use Mouse;
-    use MouseX::Extend qw(Person);
+    use MouseX::Foreign qw(Person);
 
     has handle_name => (
         is => 'rw',
         isa => 'Str',
     );
 
-    sub BUILD { $myperson_built++ }
+    sub BUILD { $myperson_build++ }
+    sub DEMOLISH { $myperson_demolish++ }
 }
 
 with_immutable {
@@ -46,7 +49,8 @@ with_immutable {
 
 } qw(MyPerson);
 
-is $person_destroyed, 2, "the base class's destructor is called";
-is $myperson_built, 2, 'BUILD is called';
-
+is $person_build,      2, "the base class's BUILD is colled";
+is $person_demolish,   2, "the base class's DEMOLISH is called";
+is $myperson_build,    2, 'my BUILD is called';
+is $myperson_demolish, 2, 'my DEMOLISH is called';
 done_testing;

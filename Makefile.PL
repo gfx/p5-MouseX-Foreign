@@ -2,9 +2,9 @@ use strict;
 use warnings;
 use inc::Module::Install;
 
-all_from 'lib/MouseX/Extend.pm';
+all_from 'lib/MouseX/Foreign.pm';
 
-requires 'Mouse' => 0.70;
+requires 'Mouse' => 0.71;
 
 test_requires 'Test::More' => 0.88; # done_testing()
 
@@ -14,7 +14,8 @@ author_tests 'xt';
 auto_set_repository() if -d '.git';
 
 clean_files qw(
-    MouseX-Extend-* *.stackdump
+    MouseX-Foreign-*
+    *.stackdump
     cover_db
     nytprof
     *.out

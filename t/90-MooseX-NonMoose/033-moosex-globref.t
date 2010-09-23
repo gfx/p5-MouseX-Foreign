@@ -25,9 +25,9 @@ BEGIN {
         Mouse->init_meta(%options);
         return Mouse::Util::MetaRole::apply_metaclass_roles(
             for_class               => $options{for_class},
-            metaclass_roles         => ['MouseX::Extend::Meta::Role::Class'],
+            metaclass_roles         => ['MouseX::Foreign::Meta::Role::Class'],
             constructor_class_roles =>
-                ['MouseX::Extend::Meta::Role::Constructor'],
+                ['MouseX::Foreign::Meta::Role::Constructor'],
             instance_metaclass_roles =>
                 ['MouseX::GlobRef::Role::Meta::Instance'],
         );

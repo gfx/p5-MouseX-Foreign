@@ -14,7 +14,7 @@ sub new {
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 after new => sub {
@@ -23,7 +23,7 @@ after new => sub {
 
 package Foo::Mouse2;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 sub new {

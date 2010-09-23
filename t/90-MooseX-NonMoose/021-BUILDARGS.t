@@ -14,7 +14,7 @@ sub name { shift->{name} }
 
 package Foo::Mouse;
 use Mouse;
-use MouseX::Extend;
+use MouseX::Foreign;
 extends 'Foo';
 
 has foo => (
