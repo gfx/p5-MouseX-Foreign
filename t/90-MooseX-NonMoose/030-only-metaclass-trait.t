@@ -18,5 +18,7 @@ isa_ok(Foo::Mouse->new, 'Mouse::Object');
 isa_ok(Foo::Mouse->new, 'Foo');
 my $method = Foo::Mouse->meta->get_method('new');
 Foo::Mouse->meta->make_immutable;
-is(Foo::Mouse->meta->get_method('new')->body, $method->body,
+{ local $TODO = "method object semantics is different from Moose's";
+is(Foo::Mouse->meta->get_method('new'), $method,
    'inlining doesn\'t happen when the constructor trait isn\'t used');
+}

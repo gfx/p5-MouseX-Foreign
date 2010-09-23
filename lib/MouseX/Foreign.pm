@@ -43,7 +43,7 @@ This document describes MouseX::Foreign version 0.001.
 
     package MyInt;
     use Mouse;
-    use MouseX::Foreign qw(Math::BitInt);
+    use MouseX::Foreign qw(Math::BigInt);
 
     has name => (
         is  => 'ro',
