@@ -2,7 +2,7 @@ package MouseX::Foreign::Meta::Role::Class;
 use Mouse::Role;
 use Mouse::Util::MetaRole;
 
-__PACKAGE__->meta->add_class_accessor('foreign_superclass');
+__PACKAGE__->meta->add_metaclass_accessor('foreign_superclass');
 
 after superclasses => sub {
     my($self, @args) = @_;
