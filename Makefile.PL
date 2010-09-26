@@ -7,6 +7,7 @@ all_from 'lib/MouseX/Foreign.pm';
 requires 'Mouse' => 0.71;
 
 test_requires 'Test::More' => 0.88; # done_testing()
+test=requires 'Test::Requires';
 
 tests_recursive 't', 't/*';
 author_tests 'xt';
