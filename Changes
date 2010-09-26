@@ -1,5 +1,9 @@
 Revision history for Perl extension MouseX::Extend
 
+0.002 Sun Sep 26 13:44:40 2010
+    - No code changes
+    - Fix packaging issues
+
 0.001 
     - original version; created by Module::Setup
       at Fri Feb 26 22:24:38 2010.
