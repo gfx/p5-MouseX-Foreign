@@ -36,7 +36,7 @@ This document describes MouseX::Foreign version 0.001.
 
 =head1 DESCRIPTION
 
-Thisr is the meta method destructor role for MouseX::Foreign.
+This is the meta method destructor role for MouseX::Foreign.
 
 =head1 SEE ALSO
 
