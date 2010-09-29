@@ -28,18 +28,18 @@ __END__
 
 =head1 NAME
 
-MouseX::Extend::Meta::Role::Method::Destructor - The MouseX::Extend meta method destructor role
+MouseX::Foreign::Meta::Role::Method::Destructor - The MouseX::Foreign meta method destructor role
 
 =head1 VERSION
 
-This document describes MouseX::Extend version 0.001.
+This document describes MouseX::Foreign version 0.002.
 
 =head1 DESCRIPTION
 
-MouseX::Extend::Meta::Role::Method::Destructor is the meta method destructor role for MouseX::Extend.
+This is the meta method destructor role for MouseX::Foreign.
 
 =head1 SEE ALSO
 
-L<MouseX::Extend>
+L<MouseX::Foreign>
 
 =cut

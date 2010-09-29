@@ -18,3 +18,6 @@ gfuji(at)cpan.org
 MouseX::Extend
 RT
 cpan
+destructor
+ACKNOWLEDGEMENT
+
