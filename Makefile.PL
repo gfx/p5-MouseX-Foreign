@@ -4,7 +4,7 @@ use inc::Module::Install;
 
 all_from 'lib/MouseX/Foreign.pm';
 
-requires 'Mouse' => 0.71;
+requires 'Mouse' => 0.77;
 
 test_requires 'Test::More' => 0.88; # done_testing()
 test_requires 'Test::Requires';
