@@ -12,12 +12,23 @@ after superclasses => sub {
     return;
 };
 
-sub inherit_from_foreign_class {
+before verify_superclass => sub {
+    my($self, $super, $super_meta) = @_;
+
+    if(defined($super_meta) && $super_meta->does(__PACKAGE__)) {
+        $self->inherit_from_foreign_class($super);
+    }
+    return;
+};
+
+sub inherit_from_foreign_class { # override
     my($self, $super) = @_;
     if(defined $self->foreign_superclass) {
         $self->throw_error(
-            "Multiple inheritance from"
-            . " from foreign classes (@_) is forbidden");
+            "Multiple inheritance"
+            . " from foreign classes ($super, "
+            . $self->foreign_superclass
+            . ") is forbidden");
     }
     my %traits;
     if($super->can('new')) {
@@ -33,7 +44,7 @@ sub inherit_from_foreign_class {
             class_metaroles => \%traits,
         );
 
-        # XXX: FIXME
+        # FIXME
         $self->add_method(
             new => $self->constructor_class->_generate_constructor($self),
         );
