@@ -8,6 +8,7 @@ requires 'Mouse' => 0.77;
 
 test_requires 'Test::More' => 0.88; # done_testing()
 test_requires 'Test::Requires';
+test_requires 'Test::Exception';
 
 tests_recursive 't', 't/*';
 author_tests 'xt';
