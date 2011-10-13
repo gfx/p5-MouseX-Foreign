@@ -1,11 +1,11 @@
-This is Perl module MouseX::Extend.
+This is Perl module MouseX::Foreign.
 
 INSTALLATION
 
-MouseX::Extend installation is straightforward. If your CPAN shell is set up,
+MouseX::Foreign installation is straightforward. If your CPAN shell is set up,
 you should just be able to do
 
-    $ cpan MouseX::Extend
+    $ cpan MouseX::Foreign
 
 Download it, unpack it, then build it as per the usual:
 
@@ -18,9 +18,9 @@ Then install it:
 
 DOCUMENTATION
 
-MouseX::Extend documentation is available as in POD. So you can do:
+MouseX::Foreign documentation is available as in POD. So you can do:
 
-    $ perldoc MouseX::Extend
+    $ perldoc MouseX::Foreign
 
 to read the documentation online with your favorite pager.
 
