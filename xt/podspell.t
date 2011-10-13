@@ -15,9 +15,8 @@ all_pod_files_spelling_ok('lib');
 __DATA__
 Goro Fuji (gfx)
 gfuji(at)cpan.org
-MouseX::Extend
+MouseX::Foreign
 RT
 cpan
 destructor
 ACKNOWLEDGEMENT
-
