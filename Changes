@@ -1,5 +1,9 @@
 Revision history for Perl extension MouseX::Foreign
 
+0.006 2011-10-13 10:47:07
+    - Add MouseX::NonMoose for drop-in compatibility with Any::Moose
+    - Add test files for new module
+
 0.005 2011-10-13 09:40:21
     - No code changes
     - Fix module name in README, .gitignore, xt/podspell.t and Changes (this file)

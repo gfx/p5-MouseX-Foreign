@@ -11,7 +11,7 @@ __END__
 
 =head1 NAME
 
-MouseX::NonMoose - MouseX::Foreign plus drop-in compatiblity with Any::Moose
+MouseX::NonMoose - MouseX::Foreign plus drop-in compatibility with Any::Moose
 
 =head1 VERSION
 
