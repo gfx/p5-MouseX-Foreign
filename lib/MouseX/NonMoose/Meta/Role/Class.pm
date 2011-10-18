@@ -1,4 +1,5 @@
 package MouseX::NonMoose::Meta::Role::Class;
+
 use Mouse::Role;
 use Mouse::Util::MetaRole;
 
