@@ -1,5 +1,9 @@
 Revision history for Perl extension MouseX::Foreign
 
+0.007 2011-10-17 18:57:02
+    - Declare Any::Moose version (rsimoes)
+    - Fix duplicated code in meta methods (rsimoes)
+
 0.006 2011-10-13 10:47:07
     - Add MouseX::NonMoose for drop-in compatibility with Any::Moose
     - Add test files for new module

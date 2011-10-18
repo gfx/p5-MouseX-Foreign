@@ -32,7 +32,7 @@ MouseX::Foreign::Meta::Role::Method::Destructor - The MouseX::Foreign meta metho
 
 =head1 VERSION
 
-This document describes MouseX::Foreign version 0.006.
+This document describes MouseX::Foreign version 0.007.
 
 =head1 DESCRIPTION
 
