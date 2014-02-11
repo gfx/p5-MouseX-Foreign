@@ -2,7 +2,7 @@ package MouseX::Foreign;
 use 5.008_001;
 use Mouse::Util; # turns on strict and warnings
 
-our $VERSION = '0.007';
+our $VERSION = '0.008';
 
 use Mouse::Util::MetaRole;
 use Carp ();
@@ -37,7 +37,7 @@ MouseX::Foreign - Extends non-Mouse classes as well as Mouse classes
 
 =head1 VERSION
 
-This document describes MouseX::Foreign version 0.007.
+This document describes MouseX::Foreign version 0.008.
 
 =head1 SYNOPSIS
 
