@@ -20,6 +20,7 @@ This document describes MouseX::Foreign version 0.005.
 =head1 SYNOPSIS
 
     package MyInt;
+    use Any::Moose;
     use Any::Moose 'X::NonMoose';
     extends 'Math::BigInt';
 
