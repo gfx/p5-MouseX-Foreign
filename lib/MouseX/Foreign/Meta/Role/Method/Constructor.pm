@@ -12,10 +12,10 @@ around _generate_constructor => sub {
 
     return sub {
         my $class  = shift;
+        my $args = $class->BUILDARGS(@_);
         my $object = $foreign_buildargs
             ? $class->$super_new($class->$foreign_buildargs(@_))
             : $class->$super_new(                           @_ );
-        my $args = $class->BUILDARGS(@_);
         $object->meta->_initialize_object($object, $args);
         $object->BUILDALL($args) if $needs_buildall;
 
