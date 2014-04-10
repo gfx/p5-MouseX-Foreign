@@ -4,7 +4,7 @@ MouseX::Foreign - Extends non-Mouse classes as well as Mouse classes
 
 # VERSION
 
-This document describes MouseX::Foreign version 0.008.
+This document describes MouseX::Foreign version 1.000.
 
 # SYNOPSIS
 

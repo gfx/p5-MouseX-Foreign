@@ -2,6 +2,11 @@ Revision history for Perl extension MouseX::Foreign
 
 {{$NEXT}}
 
+1.000 2014-04-10T22:07:50Z
+    [CHANGES]
+    - BUILDARGS is now called before constructors (#4 by schwern)
+      See https://github.com/gfx/p5-MouseX-Foreign/pull/4 for details
+
 0.008 2014-02-11 23:08:12+0900
     - Make Any::Moose test_requires; thanks to @acidlemon
 

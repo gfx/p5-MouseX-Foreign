@@ -69,11 +69,11 @@
          "web" : "https://github.com/gfx/p5-MouseX-Foreign"
       }
    },
-   "version" : "0.008",
+   "version" : "1.000",
    "x_contributors" : [
       "Richard Simões <rsimoes@cpan.org>",
       "Fuji Goro <fuji.goro@dena.jp>",
       "Michael G. Schwern <schwern@pobox.com>",
-      "Fuji, Goro <gfuji@cpan.org>"
+      "Fuji, Goro (gfx) <gfuji@cpan.org>"
    ]
 }

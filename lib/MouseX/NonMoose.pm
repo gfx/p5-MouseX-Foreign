@@ -3,7 +3,7 @@ package MouseX::NonMoose;
 use Mouse;
 extends 'MouseX::Foreign';
 
-our $VERSION = '0.005';
+our $VERSION = '1.000';
 
 1;
 
@@ -15,7 +15,7 @@ MouseX::NonMoose - MouseX::Foreign plus drop-in compatibility with Any::Moose
 
 =head1 VERSION
 
-This document describes MouseX::Foreign version 0.005.
+This document describes MouseX::Foreign version 1.000.
 
 =head1 SYNOPSIS
 
