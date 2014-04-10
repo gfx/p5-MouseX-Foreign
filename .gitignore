@@ -23,3 +23,11 @@ cover_db*
 *.gno
 *.gcov
 *~
+/MouseX-Foreign-*
+/.build
+/_build_params
+/Build
+/Build.bat
+!Build/
+!META.json
+!LICENSE

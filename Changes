@@ -1,5 +1,7 @@
 Revision history for Perl extension MouseX::Foreign
 
+{{$NEXT}}
+
 0.008 2014-02-11 23:08:12+0900
     - Make Any::Moose test_requires; thanks to @acidlemon
 
